@@ -34,8 +34,8 @@ const serviceAccountAuth = new google.auth.JWT({
 const calendar = google.calendar('v3');
 process.env.DEBUG = 'dialogflow:*'; // enables lib debugging statements
 
-const timeZone = 'America/Los_Angeles';
-const timeZoneOffset = '-07:00';
+const timeZone = 'Eastern European Time - Kiev';
+const timeZoneOffset = '+03:00';
 
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, response) => {
   const agent = new WebhookClient({ request, response });
